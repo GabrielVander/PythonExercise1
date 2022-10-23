@@ -91,8 +91,7 @@ class TestDataUsageStatistics:
         statistics: DataUsageStatistics = DataUsageStatistics(user_usages=user_usages)
         individual_usages: list[IndividualUsage] = statistics.individual_usages
 
-        for i in range(len(expected_percentages)):
-            expected_percentage: float = expected_percentages[i]
+        for i, expected_percentage in enumerate(expected_percentages):
             individual_usage: IndividualUsage = individual_usages[i]
 
             assert individual_usage.overall_percentage == expected_percentage

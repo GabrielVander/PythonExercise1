@@ -41,9 +41,9 @@ class TestSaveUsageStatisticsUseCase:
             DataUsageStatistics(user_usages=[]),
             DataUsageStatistics(
                 user_usages=[
-                    UserDataUsage(username=Username(value='breathe'), usage=MegabytesUnit(value='62')),
-                    UserDataUsage(username=Username(value='path'), usage=MegabytesUnit(value='38')),
-                    UserDataUsage(username=Username(value='miss'), usage=MegabytesUnit(value='900')),
+                    UserDataUsage(username=Username(value='breathe'), usage=MegabytesUnit(value=62.0)),
+                    UserDataUsage(username=Username(value='path'), usage=MegabytesUnit(value=38.0)),
+                    UserDataUsage(username=Username(value='miss'), usage=MegabytesUnit(value=900.0)),
                 ]
             ),
         ]

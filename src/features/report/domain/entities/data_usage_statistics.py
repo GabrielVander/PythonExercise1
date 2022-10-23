@@ -8,7 +8,7 @@ from src.features.report.domain.entities.user_data_usage import UserDataUsage
 @dataclasses.dataclass(frozen=True, kw_only=True)
 class DataUsageStatistics:
     user_usages: list[UserDataUsage]
-    total_usage: MegabytesUnit = dataclasses.field(init=False, default=MegabytesUnit(value=0))
+    total_usage: MegabytesUnit = dataclasses.field(init=False, default=MegabytesUnit(value=0.0))
     individual_usages: list[IndividualUsage] = dataclasses.field(init=False, default_factory=list)
 
     def __post_init__(self):
@@ -16,16 +16,14 @@ class DataUsageStatistics:
         self._set_individual_usages()
 
     def _set_total_usage(self):
-        total_usage: int = self._calculate_total_usage()
-        object.__setattr__(self, 'total_usage', MegabytesUnit(value=float(total_usage)))
+        total_usage: float = self._calculate_total_usage()
+        object.__setattr__(self, 'total_usage', MegabytesUnit(value=total_usage))
 
-    def _calculate_total_usage(self) -> int:
-        total: int = 0
+    def _calculate_total_usage(self) -> float:
+        total: float = 0.0
 
         for usage in self.user_usages:
-            usage_as_int: int = int(usage.usage.value)
-
-            total += usage_as_int
+            total += usage.usage.value
 
         return total
 
@@ -39,11 +37,12 @@ class DataUsageStatistics:
             total_usage: float = float(self.total_usage.value)
             user_usage_value: float = float(user_usage.usage.value)
 
-            overall_percentage: float = self._calculate_overall_percentage(total_usage, user_usage_value)
-            rounded_overall_percentage: float = round(overall_percentage, 2)
+            overall_percentage_as_decimal: float = self._calculate_overall_percentage(total_usage, user_usage_value)
+            as_percentage: float = overall_percentage_as_decimal * 100
+            rounded_overall_percentage: float = round(as_percentage, 2)
 
             individual_usages.append(
-                IndividualUsage(usage=user_usage, overall_percentage=rounded_overall_percentage * 100)
+                IndividualUsage(usage=user_usage, overall_percentage=rounded_overall_percentage)
             )
         return individual_usages
 

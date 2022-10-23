@@ -42,6 +42,16 @@ class TestStatisticsRepositoryImpl:
                     )
                 )]
             ), ['1', 'screw', '738.59MB', '100.0%', 'Total Occupied Space: 738.59MB']),
+            (DataUsageStatistics(
+                user_usages=[
+                    UserDataUsage(username=Username(value='screw'), usage=MegabytesUnit(value=738.59)),
+                    UserDataUsage(username=Username(value='breathe'), usage=MegabytesUnit(value=62.0)),
+                ]
+            ), [
+                 '1', 'screw', '738.59MB', '92.26%',
+                 '2', 'breathe', '62.0MB', '7.74%',
+                 'Total Occupied Space: 800.59MB'
+             ]),
         ]
     )
     async def test_should_build_file_content_correctly(

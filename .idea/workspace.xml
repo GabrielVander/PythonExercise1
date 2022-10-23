@@ -4,7 +4,25 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="88707797-c702-4426-b4f0-89ecf8419b02" name="Changes" comment="" />
+    <list default="true" id="88707797-c702-4426-b4f0-89ecf8419b02" name="Changes" comment="Finished Project Implementation">
+      <change afterPath="$PROJECT_DIR$/.idea/git_toolbox_prj.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/mypy.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/features/report/report_controller.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/report/data/data_sources/assets/output_test.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/report/test_report_controller.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/file_input/users" beforeDir="false" afterPath="$PROJECT_DIR$/file_input/users.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/report/data/data_sources/file_data_source.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/report/data/data_sources/file_data_source.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/report/domain/entities/data_usage_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/report/domain/entities/data_usage_statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/report/data/data_sources/test_file_data_source.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/report/data/data_sources/test_file_data_source.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/report/data/repositories/test_statistics_repository_impl.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/report/data/repositories/test_statistics_repository_impl.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/report/domain/entities/test_data_usage_statistics.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/report/domain/entities/test_data_usage_statistics.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/report/domain/use_cases/test_generate_usage_statistics_use_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/report/domain/use_cases/test_generate_usage_statistics_use_case.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/report/domain/use_cases/test_save_usage_statistics_use_case.py" beforeDir="false" afterPath="$PROJECT_DIR$/test/report/domain/use_cases/test_save_usage_statistics_use_case.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,10 +35,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="2GPdKnJGzkWZLn9XzEp96n5Oh3B" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -31,12 +53,14 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "WebServerToolWindowFactoryState": "false",
     "last_opened_file_path": "C:/Users/gabsv/PycharmProjects/pythonProject1/src/features/report/data/data_sources/test/report/data/assets",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
     "settings.editor.selected.configurable": "com.leinardi.pycharm.pylint.PylintConfigurable"
   }
 }]]></component>
@@ -51,7 +75,7 @@
       <recent name="C:\Users\gabsv\PycharmProjects\pythonProject1" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.pytest in test">
+  <component name="RunManager" selected="Python.main">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="pythonProject1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,14 +130,37 @@
       <updated>1666294094092</updated>
       <workItem from="1666294104410" duration="199000" />
       <workItem from="1666294315362" duration="2695000" />
-      <workItem from="1666356017471" duration="19918000" />
+      <workItem from="1666356017471" duration="20949000" />
+      <workItem from="1666555550731" duration="7077000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT_PROFILE" value="Default" />
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
+    <MESSAGE value="Finished Project Implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="Finished Project Implementation" />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
+  </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
-    <SUITE FILE_PATH="coverage/pythonProject1$pytest_in_test.coverage" NAME="pytest in test Coverage Results" MODIFIED="1666380562310" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pythonProject1$pytest_in_test.coverage" NAME="pytest in test Coverage Results" MODIFIED="1666559650487" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="" />
+    <SUITE FILE_PATH="coverage/pythonProject1$main.coverage" NAME="main Coverage Results" MODIFIED="1666560584506" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
